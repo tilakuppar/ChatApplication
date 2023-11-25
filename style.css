@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #ebebeb;
+}
+.title{
+    font-family: 'Russo One', sans-serif;
+    margin: 15px 0px;
+    font-size: xx-large;
+    color: rgb(63, 63, 65);
+}
+.container{
+    border: 8px solid rgb(179, 177, 177);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.user-input{
+    display: flex;
+    background-color:#efefef;
+    font-size: 30px;
+    padding:5px 15px ;
+    border-bottom: 1px solid grey;
+}
+.user-input i{
+    padding-top: 3px;
+}
+.name-ip{
+    font-family: 'Chakra Petch', sans-serif;
+    background-color: #efefef;
+    outline: none;
+    border: none;
+    padding-left: 15px;
+    font-size: large;
+}
+.message-container{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px ;
+    margin-top: 3px;
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.msg-left{
+    background-color: #fff;
+    border-radius: 15px 15px 15px 0px;
+    word-wrap: break-word;
+    max-width: fit-content;
+    padding:5px 5px;
+    margin-top: 5px;
+    font-family:  'Josefin Sans', sans-serif;
+    font-size: medium;
+    align-self: flex-start;
+}
+ul li p{
+    padding:1px 5px;
+}
+ul li span{
+    display: block;
+    padding-top: 2px;
+    font-size: 12px;
+    font-family: monospace;
+}
+.msg-right{
+    background-color: #000000ab;
+    color: white;
+    border-radius: 15px 15px 0px 15px;
+    word-wrap: break-word;
+    max-width: fit-content;
+    padding:5px 5px;
+    margin-top: 5px;
+    font-family:  'Josefin Sans', sans-serif;
+    font-size:medium;
+    align-self: flex-end;
+}
+
+.message-form{
+    border-top: 1px solid grey;
+    display: flex;
+}
+.message-input{
+    width:310px;
+    height: 40px;
+    border-radius: 0px 0px 0px 8px;
+    border: none;
+    outline: none ;
+    background-color: #bdb9b9;
+    text-align: center;
+    border-right: 1px solid grey;
+}
+.send{
+    width: 90px;
+    height: 40px;
+    border-radius: 0px 0px 8px 0px;
+    border: none;
+    outline: none ;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: small;
+    background-color: #bdb9b9;
+    padding: 5px;
+    cursor: pointer;
+}
+.send i{
+    padding:0px 8px ;
+    font-size: medium;
+}
+.total{
+    font-weight: bold;
+    color: gray;
+    padding-top: 10px;
+}
+
